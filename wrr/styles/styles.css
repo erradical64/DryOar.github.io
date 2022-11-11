@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     padding: 10px; 
-    color: red;
+    color: rgb(255, 255, 255);
     font-family:  sans-serif, serif;
     font-size: 1.25em;
     line-height: 1.25em;
@@ -99,9 +99,14 @@ header {
 }
 .home-grid {
     display: grid;
-    /*--grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;--*/
     grid-template-columns: repeat(10, 1fr);
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 10px;
+}
+
 img { 
     max-width:  100%;
 }
@@ -125,9 +130,9 @@ main, section {
     grid-row: 2/3;
 }
 .rivers-card, .camping-card, .rapids-card{ 
-    margin: 25px auto; 
+    margin: 25px auto;    
     width: 90%;  
- }
+}
 .join, .book {
     background-color: bisque;  
     color: #6f7364;
@@ -136,11 +141,24 @@ main, section {
     padding: 15px;  
     box-shadow: 2px 6px 12px #000000;  
 }
-.join:hover, .book:hover { 
+.join:hover, .book:hover{ 
   color: #6f7364;  
   background-color: bisque;
   box-shadow: 4px 4px 4px #000000;  
 }
+.act-link{
+    background-color: #6f7364;  
+    color: bisque;
+    border-radius: 5px; 
+    text-decoration: none; 
+    padding: 15px;  
+    box-shadow: 2px 6px 12px #000000;  
+}
+.act-link:hover { 
+    background-color: #6f7364;  
+    color: bisque;
+    box-shadow: 4px 4px 4px #000000;  
+  }
 .button-box { 
     text-align:  center;
     margin: 55px;  
@@ -168,12 +186,28 @@ main, section {
     grid-column: 1/11;
     grid-row: 4/9;
 }
+
+
 .mountains {  
     width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
-    
+    box-shadow: 5px 5px 10px #6f7364;  
+}
+#act-div{
+    padding-bottom: 0px;
+}
+.activities{  
+    width: auto;
+    grid-column: 1/7;
+    height: auto;
+}
+.text-info{
+    background-color: #6f7364 ;
+    padding: 60px;
+    text-align: center;
+    grid-column: 7/11;
+    width: 700px;
 }
 
 
@@ -188,11 +222,11 @@ main, section {
     box-shadow: 5px 5px 10px #6f7364;
      
 }
-.msg h2 {  
+.msg h2, .text-info h2{  
     color: white; 
     font-size: 1.25em;
 }
-.msg p a{
+.msg p a, .text-info p a{
     font-size: .75em;  color: white
 }
 footer { 
