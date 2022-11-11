@@ -101,7 +101,7 @@ header {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-.home-grid {
+.river-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     padding: 10px;
